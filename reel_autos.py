@@ -1,8 +1,10 @@
-titulo = "Publicidad cinematográfica de autos"
-duracion = 30
-escenas = 5
+print("🎬 ORGANIZADOR DE REELS - TUKI AI")
 
-print("PROYECTO:", titulo)
-print("Duración total:", duracion, "segundos")
-print("Cantidad de escenas:", escenas)
-print("Duración por escena:", duracion / escenas, "segundos")
+duracion = int(input("¿Cuántos segundos dura el Reel? "))
+escenas = int(input("¿Cuántas escenas querés? "))
+
+if escenas > 0:
+    resultado = duracion / escenas
+    print("Cada escena debe durar", resultado, "segundos")
+else:
+    print("Error: la cantidad de escenas debe ser mayor que cero.")
